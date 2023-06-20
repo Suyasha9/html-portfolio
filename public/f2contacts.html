@@ -1,0 +1,98 @@
+
+<!--implemented table with form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <title>Contact</title>
+    <style>
+        body{
+            background-color:#696969	;
+        }
+    </style>
+    </head>
+<body>
+    <h1>Contact me</h1>
+    <table>
+        <tr>
+            <td><strong>Phone:</strong></td>
+            <td><em>8765124987</em></td>
+        </tr>
+        <tr>
+            <td><strong>email:</strong></td>
+            <td><em>mymail@gmail.com</em></td>
+        </tr>
+    </table>
+    <table>
+        <tbody>
+            <!--initially it was    <form class="" action="f2.html" method="post"> so we were returning bck to home 
+                page of website on submitting our info in form non contact me page
+                so we use mailto:-->
+
+    <form class="" action="mailto:dummygmail.com" method="post">
+        
+            <tr>
+                <td><label>Your firstname:</label></td>
+               <!--<td><input type="text" name="" value=""></td>-->
+               <!-- we got the name  with title in form yourrName=aman that user entered as text in our mail on our
+             mail app on submit button pressing on typing
+                 yourName in name unlike when name=""-->
+                 <!--when we type only name="" the name entered by user does not display in mail --> 
+                <td><input type="text" name="yourFirstName" value=""></td>
+
+                   <!--<input type="color"></td>-->
+                   <tr>
+                    <td><label>Your secondname:</label></td>
+                   <!--<td><input type="text" name="secondname" value=""></td>-->
+                  <!-- we DID NOT GET the second name that user entered as  text in our mail on our
+             mail app  on submit button pressing as we didnt give a name to enetered data i.e a title --> 
+                     <!--when we type only name="" the name entered by user does not display in mail --> 
+                    <td><input type="text" name="" value=""></td>
+    
+                       <!--<input type="color"></td>-->
+                    </tr>
+                </tr>
+        
+        
+        <tr>
+            <td><label>enter valid mail id:</label></td>
+         
+
+         <!-- we got the email with title yourEmail in form yourEmail=beingme2356@gmail.com as text in our mail on our
+             mail app  on submit button pressing on typing yourEmail in name unlike when name=""--> 
+  
+         <td><input type="email" name="YourEmail"></td>  </tr>
+         <!--<td><input type="email"></td>  </tr>-->
+
+                
+        <tr><td><label>enter a valid password:</label></td>
+                   <!-- we DID NOT GET the password that user entered as  text in our mail on our
+             mail app  on submit button pressing as we didnt give a name to enetered data i.e a title --> 
+            <td><input type="password"></td> </tr>
+            <tr>
+                <td><label>Submit a picture of yours in jpeg or png form </label></td>
+                <td><input type="file"></td>
+            </tr>
+        </tbody>
+    </table>
+    <label>Your message</label>  
+    <br>
+       
+<!-- we got the message that user entered as well on prewritten text in our mail on our
+             mail app  on submit button pressing on typing yourEmail in name unlike when name=""--> 
+    <textarea name="yourMessage" rows="2" cols="20"></textarea>
+   
+       
+       <table> <tr>
+        <td><label>If all the above information is correct check the checkbox to submit the details</label></td>
+        <td><input type="checkbox"></td></tr>
+       <tr>
+        <td><input type="submit" ></td></tr> </table>
+        
+        
+        
+
+    </form>
+    </body>
+</html>
